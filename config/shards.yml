@@ -1,0 +1,13 @@
+octopus:
+  replicated: true
+  fully_replicated: true
+  production:
+    slave1:
+      adapter: postgresql
+      url: <%= ENV['HEROKU_POSTGRESQL_COBALT_URL'] %>
+    slave2:
+      adapter: postgresql
+      url: <%= ENV['HEROKU_POSTGRESQL_JADE_URL'] %>
+    slave3:
+      adapter: postgresql
+      url: <%= ENV['HEROKU_POSTGRESQL_WHITE_URL'] %>
