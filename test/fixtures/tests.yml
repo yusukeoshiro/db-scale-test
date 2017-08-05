@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  a: MyString
+  b: MyString
+  c: MyString
+  d: MyString
+  e: MyString
+  f: MyString
+  g: MyString
+  h: MyString
+  i: MyString
+  j: 
+  k: MyString
+  l: MyString
+  m: MyString
+  'n': MyString
+
+two:
+  a: MyString
+  b: MyString
+  c: MyString
+  d: MyString
+  e: MyString
+  f: MyString
+  g: MyString
+  h: MyString
+  i: MyString
+  j: 
+  k: MyString
+  l: MyString
+  m: MyString
+  'n': MyString

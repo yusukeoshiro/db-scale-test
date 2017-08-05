@@ -1,0 +1,13 @@
+<p>
+	random test key is: <%=@key%>	
+</p>
+
+time took: <%=@ms%>ms
+
+<h1>found records</h1>
+
+
+<% @result.each do |record| %>
+	<li><%=record.id%></li>
+<% end %>
+
