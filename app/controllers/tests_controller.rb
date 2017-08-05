@@ -5,9 +5,12 @@ class TestsController < ApplicationController
   def random_search
     # random key
 
+
     t1 = Time.now
     @key = rand(1...100000).to_s
     @result = Test.where( "a LIKE '%#{@key}%' OR b LIKE '%#{@key}%' OR c LIKE '%#{@key}%' OR d LIKE '%#{@key}%' OR e LIKE '%#{@key}%' OR f LIKE '%#{@key}%' OR g LIKE '%#{@key}%' OR h LIKE '%#{@key}%' OR i LIKE '%#{@key}%' OR j LIKE '%#{@key}%' OR k LIKE '%#{@key}%' OR l LIKE '%#{@key}%' OR m LIKE '%#{@key}%' OR n LIKE '%#{@key}%' " )
+    @count = Test.all.size    
+
     t2 = Time.now
 
     @ms = (t2 - t1) * 1000.0
