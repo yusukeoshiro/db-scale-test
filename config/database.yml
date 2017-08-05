@@ -81,11 +81,3 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
-  slave:
-    database: d6ukamflh012dm
-    username: udpsv17rcn09o1
-    password: pa64126783b1625d70a364e5d51dc40e5c1c95066099bceb7dbe1a412ddc7518b
-    encoding: utf8
-    adapter:  postgresql
-    host:     ec2-54-157-73-117.compute-1.amazonaws.com
-    pool:     50
