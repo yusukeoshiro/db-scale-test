@@ -1,11 +1,3 @@
-GIT
-  remote: git://github.com/tchandy/octopus.git
-  revision: 601d2ddce4477863c091bf2c2ba09c7e8c1024e7
-  specs:
-    ar-octopus (0.9.1)
-      activerecord (>= 4.0.0)
-      activesupport (>= 4.0.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -28,6 +20,8 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.3)
+    active_record_slave (1.3.0)
+      activerecord (>= 3.0)
     activejob (4.2.8)
       activesupport (= 4.2.8)
       globalid (>= 0.3.0)
@@ -164,7 +158,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  ar-octopus!
+  active_record_slave
   byebug
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
