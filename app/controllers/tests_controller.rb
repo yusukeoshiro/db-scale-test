@@ -8,7 +8,8 @@ class TestsController < ApplicationController
 
     t1 = Time.now
     @key = rand(1...100000).to_s
-    @result = Test.where( "a LIKE '%#{@key}%' OR b LIKE '%#{@key}%' OR c LIKE '%#{@key}%' OR d LIKE '%#{@key}%' OR e LIKE '%#{@key}%' OR f LIKE '%#{@key}%' OR g LIKE '%#{@key}%' OR h LIKE '%#{@key}%' OR i LIKE '%#{@key}%' OR j LIKE '%#{@key}%' OR k LIKE '%#{@key}%' OR l LIKE '%#{@key}%' OR m LIKE '%#{@key}%' OR n LIKE '%#{@key}%' " )
+
+    @result = Test.using(Octopus.config["production"]["followers"].keys.sample).where( "a LIKE '%#{@key}%' OR b LIKE '%#{@key}%' OR c LIKE '%#{@key}%' OR d LIKE '%#{@key}%' OR e LIKE '%#{@key}%' OR f LIKE '%#{@key}%' OR g LIKE '%#{@key}%' OR h LIKE '%#{@key}%' OR i LIKE '%#{@key}%' OR j LIKE '%#{@key}%' OR k LIKE '%#{@key}%' OR l LIKE '%#{@key}%' OR m LIKE '%#{@key}%' OR n LIKE '%#{@key}%' " )
     @count = Test.all.size    
 
     t2 = Time.now

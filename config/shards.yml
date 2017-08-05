@@ -50,7 +50,7 @@ configs.delete_if do |c|
 end
 %>
 octopus:
-  replicated: true
+  replicated: true  
   fully_replicated: true
   environments:
   <% if configs.present? %>
